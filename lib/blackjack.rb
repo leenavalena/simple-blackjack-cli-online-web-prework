@@ -24,7 +24,7 @@ def get_user_input
 end
 
 def end_game
-  # code #end_game here
+    expect($stdout).to receive(:puts).with("Sorry, you hit 27. Thanks for playing!")
 end
 
 def initial_round
