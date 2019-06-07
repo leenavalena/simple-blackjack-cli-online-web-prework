@@ -14,7 +14,7 @@ def display_card_total
 end
 
 def prompt_user
-  # code #prompt_user here
+  expect($stdout).to receive(:puts).with("Type 'h' to hit or 's' to stay")
 end
 
 def get_user_input
