@@ -28,7 +28,9 @@ def end_game
 end
 
 def initial_round
-  # code #initial_round here
+  it "calls on #deal_card twice and returns the sum" do
+    expect(self).to receive(:deal_card).at_least(:twice).and_return(6)
+    expect(initial_round).to eq(12)
 end
 
 def hit?
