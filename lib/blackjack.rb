@@ -18,7 +18,9 @@ def prompt_user
 end
 
 def get_user_input
-  # code #get_user_input here
+  ["h", "s", "exit"].each do |string|
+    expect(self).to receive(:gets).and_return(string)
+    expect(get_user_input).to eq(string)
 end
 
 def end_game
