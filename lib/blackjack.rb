@@ -1,9 +1,12 @@
 def welcome
-  puts "Hey there"
+  puts "Welcome to the Blackjack Table"
 end
 
 def deal_card
-  # code #deal_card here
+  20.times do 
+    card = deal_card
+    expect(card).to be > 0
+    expect(card).to be < 12
 end
 
 def display_card_total
