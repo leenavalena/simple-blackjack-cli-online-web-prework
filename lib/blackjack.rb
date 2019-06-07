@@ -34,7 +34,10 @@ def initial_round
 end
 
 def hit?
-  # code hit? here
+  before(:each) do
+    def get_user_input
+      "s"
+    end
 end
 
 def invalid_command
