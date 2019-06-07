@@ -10,7 +10,7 @@ def deal_card
 end
 
 def display_card_total
-expect { display_card_total(7) }.to_not raise_error
+  expect { display_card_total(7) }.to_not raise_error
 end
 
 def prompt_user
